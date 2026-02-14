@@ -1,35 +1,30 @@
-# LLaMA-Factory RL Analysis Playbook
+# LLaMA-Factory RL Handbook (Vietnamese)
 
-Practical onboarding docs for RL training in [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), with focus on:
-- Preference learning (RM, DPO, ORPO, SimPO, KTO, PPO)
-- How source code is organized and executed
-- How to become productive quickly as a new engineer
-- How to adapt this stack for LLM planning and orchestration tasks
+Bộ tài liệu chi tiết để đọc hiểu, cấu hình, và vận hành RL training cho LLM bằng LLaMA-Factory, tập trung vào bài toán tool-calling multi-turn và planning/orchestration.
 
-## Who This Is For
-- New engineers exploring RL training for LLMs
-- Applied researchers who need code-level understanding, not only theory
-- Teams building planner/orchestrator style LLM systems
+## Upstream Snapshot
+- Mã nguồn phân tích: `https://github.com/hiyouga/LLaMA-Factory`
+- Commit tham chiếu: `f80e15db` (2026-02-12)
+- Phạm vi thuật toán RL trong source hiện tại:
+  - Có: `RM`, `PPO`, `DPO`, `ORPO`, `SimPO`, `KTO`
+  - Không thấy implementation: `GRPO`
 
-## Repository Structure
-- `docs/00-learning-roadmap.md`: 2-4 week learning path
-- `docs/01-codebase-architecture.md`: end-to-end architecture walk-through
-- `docs/02-rl-stages-deep-dive.md`: RM/DPO/KTO/PPO internals
-- `docs/03-data-and-collators.md`: dataset schema and processor details
-- `docs/04-hands-on-quickstart.md`: practical commands and configs
-- `docs/05-common-failures.md`: troubleshooting guide
-- `docs/06-planning-orchestration.md`: applying RL to planning/orchestration behavior
+## Mục lục tài liệu
+- `docs/00-index.md`
+- `docs/01-training-config-meaning.md`
+- `docs/02-source-architecture-vs-trl.md`
+- `docs/03-rl-framework-architecture.md`
+- `docs/04-tool-calling-setup-notes.md`
+- `docs/05-example-qwen-ppo-toolcalling-multiturn.md`
+- `docs/06-example-gemma-dpo-toolcalling-multiturn.md`
+- `docs/07-example-gpt-oss-grpo-toolcalling-multiturn.md`
+- `docs/08-ppo-from-source.md`
+- `docs/09-grpo-from-current-source.md`
+- `docs/10-dpo-kto-orpo-from-source.md`
+- `docs/11-other-rl-algorithms-supported.md`
 
-## Upstream Snapshot Analyzed
-- Upstream repo: `hiyouga/LLaMA-Factory`
-- Branch: `main`
-- Commit analyzed: `f80e15db` (2026-02-12)
-
-## Fast Start
-1. Read `docs/00-learning-roadmap.md`
-2. Skim `docs/01-codebase-architecture.md`
-3. Run one RM + one DPO experiment from `docs/04-hands-on-quickstart.md`
-4. Use `docs/06-planning-orchestration.md` to map RL setup to your planner tasks
-
-## Scope Note
-Upstream currently ships ready YAML examples for `rm`, `dpo`, `kto`, but not an explicit `ppo` YAML in `examples/`. PPO is still implemented in code (`src/llamafactory/train/ppo`).
+## Đọc nhanh theo nhu cầu
+- Muốn chạy ngay: đọc `docs/04`, `docs/05`, `docs/06`.
+- Muốn hiểu sâu code: đọc `docs/02`, `docs/08`, `docs/10`.
+- Muốn thiết kế framework RL tổng quát: đọc `docs/03`.
+- Muốn GRPO: đọc `docs/09` + `docs/07`.
