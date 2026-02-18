@@ -22,9 +22,11 @@ Bộ tài liệu chi tiết để đọc hiểu, cấu hình, và vận hành RL
 - `docs/09-grpo-from-current-source.md`
 - `docs/10-dpo-kto-orpo-from-source.md`
 - `docs/11-other-rl-algorithms-supported.md`
+- `docs/series-toolcalling-agent-multiturn/` (series moi: train agent tool-calling multi-turn, tu data den training)
 
 ## Đọc nhanh theo nhu cầu
 - Muốn chạy ngay: đọc `docs/04`, `docs/05`, `docs/06`.
 - Muốn hiểu sâu code: đọc `docs/02`, `docs/08`, `docs/10`.
 - Muốn thiết kế framework RL tổng quát: đọc `docs/03`.
 - Muốn GRPO: đọc `docs/09` + `docs/07`.
+- Muốn series full tu data den production runbook cho tool-calling agent: doc thu muc `docs/series-toolcalling-agent-multiturn/`.
